@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chen.mapper.AccountMapper">
+    <insert id="save" parameterType="com.chen.doamin.Account">
+        insert into account values(#{id},#{name},#{money},#{createTime})
+    </insert>
+    <select id="findAll" resultType="com.chen.doamin.Account">
+        select * from account
+    </select>
+    <select id="findById" resultType="com.chen.doamin.Account">
+        select * from account where id = #{id}
+    </select>
+</mapper>

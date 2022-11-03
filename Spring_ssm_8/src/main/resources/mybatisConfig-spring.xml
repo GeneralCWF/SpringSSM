@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--configuration 有类型和顺序限制 "configuration" 的内容必须匹配
+    "(properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,
+    objectWrapperFactory?,reflectorFactory?,plugins?,
+    environments?,databaseIdProvider?,mappers?)-->
+    <settings>
+        <!--设置启用数据库字段下划线映射到java对象的驼峰式命名属性，默认为false-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <!--<typeAlias type="com.chen.domain.Account" alias="account"></typeAlias>-->
+        <package name="com.chen.domain"></package>
+    </typeAliases>
+
+
+</configuration>
