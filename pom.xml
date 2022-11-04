@@ -130,9 +130,7 @@
       </plugins>
     </pluginManagement>
   </build>
-<<<<<<< Updated upstream
-<!--gitHun online modify -->
-=======
+		<!--gitHun online modify -->
+
    <!-- 本地修改 -->
->>>>>>> Stashed changes
 </project>
